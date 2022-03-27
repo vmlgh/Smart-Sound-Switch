@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/header"/>
+
+    <SeekBar
+        android:id="@+id/sb_volumebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="158dp"
+        android:layout_below="@+id/header"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_testBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb_volumebar"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btn_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btn_temple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temple"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btn_hosp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_devicestates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ll_testBtns"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+    <Button
+        android:id="@+id/btn_ring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ring"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/btn_silent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silent"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btn_vibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibrate"
+        android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_volumeRange"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_testBtns"/>
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/et_volumeRange"
+        android:layout_below="@+id/ll_testBtns"/>
+
+</RelativeLayout>

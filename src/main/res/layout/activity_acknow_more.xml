@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ACKnowMoreAct"
+    android:background="@drawable/background_test">
+
+    <include
+        android:id="@+id/acKnowMore_header"
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/txt_features"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You will write App futures"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

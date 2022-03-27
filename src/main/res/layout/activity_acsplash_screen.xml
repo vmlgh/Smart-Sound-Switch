@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ACSplashScreenAct"
+    android:orientation="vertical"
+    android:background="@drawable/background_test">
+
+    <LinearLayout
+        android:id="@+id/ll_heading"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Smart Sound Switch"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_views"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@+id/ll_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/txt_tired"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Tired of changing modes manually?"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="@drawable/backgrnd_question"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_setup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/backgrnd_answer"
+            android:text="Set up your preferences right now and relax!!"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_know"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Know more!"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@drawable/background_button"
+
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/ll_views"
+
+        android:layout_marginTop="64dp"
+        android:paddingStart="64dp"
+        android:paddingEnd="64dp"/>
+
+    <Button
+        android:id="@+id/btn_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Started!"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@drawable/background_button"
+
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+
+        android:layout_marginTop="64dp"
+        android:paddingStart="64dp"
+        android:paddingEnd="64dp"/>
+
+</RelativeLayout>
